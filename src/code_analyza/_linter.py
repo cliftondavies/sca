@@ -1,6 +1,6 @@
 import sys
 
-from checks import analyse
+from linter.checks import analyse
 
 args = sys.argv
 base_path = args[1]

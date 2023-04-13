@@ -1,1 +1,7 @@
-https://github.com/hyperskill/hs-test-python/archive/release.tar.gz
+colorama==0.4.6
+iniconfig==2.0.0
+packaging==23.0
+pluggy==1.0.0
+psutil-wheels==5.8.0
+pytest==7.3.0
+ruff==0.0.261
