@@ -45,7 +45,7 @@ cur_dir = os.path.abspath(os.curdir)
 
 
 def test_1():
-    file_path = f"test{os.sep}linter_test_cases{os.sep}test1.py"
+    file_path = f"tests{os.sep}linter_test_cases{os.sep}test1.py"
     output = [line.lower() for line in analyse(file_path)]
 
     if len(output) != 9:
@@ -72,7 +72,7 @@ def test_1():
 
 
 def test_2():
-    file_path = f"test{os.sep}linter_test_cases{os.sep}test2.py"
+    file_path = f"tests{os.sep}linter_test_cases{os.sep}test2.py"
     output = [line.lower() for line in analyse(file_path)]
 
     if not output:
@@ -96,7 +96,7 @@ def test_2():
 
 
 def test_3():
-    file_path = f"test{os.sep}linter_test_cases{os.sep}test3.py"
+    file_path = f"tests{os.sep}linter_test_cases{os.sep}test3.py"
     output = [line.lower() for line in analyse(file_path)]
 
     if not output:
@@ -119,7 +119,7 @@ def test_3():
 
 
 def test_4():
-    file_path = f"test{os.sep}linter_test_cases{os.sep}test4.py"
+    file_path = f"tests{os.sep}linter_test_cases{os.sep}test4.py"
     output = [line.lower() for line in analyse(file_path)]
 
     if not output:
@@ -143,7 +143,7 @@ def test_4():
 
 
 def test_5():
-    file_path = f"test{os.sep}linter_test_cases{os.sep}test5.py"
+    file_path = f"tests{os.sep}linter_test_cases{os.sep}test5.py"
     output = [line.lower() for line in analyse(file_path)]
 
     if len(output) < 1:
@@ -168,9 +168,9 @@ def test_5():
 
 
 def test_6():
-    file3 = f"test{os.sep}linter_test_cases{os.sep}test3.py"
-    file4 = f"test{os.sep}linter_test_cases{os.sep}test4.py"
-    file5 = f"test{os.sep}linter_test_cases{os.sep}test5.py"
+    file3 = f"tests{os.sep}linter_test_cases{os.sep}test3.py"
+    file4 = f"tests{os.sep}linter_test_cases{os.sep}test4.py"
+    file5 = f"tests{os.sep}linter_test_cases{os.sep}test5.py"
     output = analyse(file3) + analyse(file4) + analyse(file5)
 
     if len(output) != 4:
