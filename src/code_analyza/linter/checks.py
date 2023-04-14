@@ -2,7 +2,7 @@ import ast
 import os
 import re
 
-from src.code_analyza.utils import find_indices, list_file_paths
+from .utils import find_indices, list_file_paths
 
 errors = []
 blank_lines = 0
