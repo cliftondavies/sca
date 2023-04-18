@@ -1,8 +1,8 @@
 # Code Analyza
 
-> A code analyser package for Python.
+A code analyser package for Python.
 
-## :rocket: Getting Started
+## Getting Started
 
 ### Installation
 
@@ -17,7 +17,7 @@ pip install code-analyza
 Run as a script:
 
 ```bash
-code-analyza _linter path/to/file/or/directory
+code_analyza path/to/file/or/directory
 ```
 
 Import as a module:

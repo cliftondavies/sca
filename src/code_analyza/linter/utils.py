@@ -35,7 +35,7 @@ def list_file_paths(folder, basepath, paths=[]):
     for content in folder:
         full_path = os.path.join(basepath, content)
 
-        if os.path.isfile(full_path) and not content.endswith("tests.py") and content.endswith(".py"):
+        if os.path.isfile(full_path) and content.endswith(".py"):
             paths.append(full_path)
         elif os.path.isdir(full_path):
             list_file_paths(content, full_path, paths)
